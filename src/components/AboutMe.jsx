@@ -1,7 +1,7 @@
 import { Fragment, useEffect } from "react";
-import About from "../Images/fakharabbas.jpeg";
-import resume from "../Images/FakharAbbas.pdf";
-import { FaDownload, FaUserTie, FaCode, FaPalette, FaWordpress } from "react-icons/fa";
+import About from "../Images/sabaarshad.jpg";
+import resume from "../Images/SabaArshad.pdf";
+import { FaDownload, FaRocket } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,29 +18,24 @@ const AboutMe = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "FakharAbbas.pdf";
+    link.download = "SabaArshad.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const skills = [
+  // Split beliefs into two cards
+  const beliefs = [
     {
-      icon: <FaUserTie className="text-[#38bdf8] text-xl sm:text-2xl" />,
-      title: "Frontend Dev",
-      description: "Building responsive and interactive user interfaces",
+      icon: <FaRocket className="text-red-600 group-hover:text-white text-2xl sm:text-3xl transition-colors duration-300" />,
+      title: "I believe in",
+      points: ["Clear strategies", "Professional execution"],
       aos: "fade-right",
     },
     {
-      icon: <FaWordpress className="text-[#21759b] text-xl sm:text-2xl" />,
-      title: "WordPress",
-      description: "Custom themes, plugins & CMS-based solutions",
-      aos: "fade-up",
-    },
-    {
-      icon: <FaPalette className="text-[#38bdf8] text-xl sm:text-2xl" />,
-      title: "UI/UX Design",
-      description: "Creating intuitive and visually appealing designs",
+      icon: <FaRocket className="text-red-600 group-hover:text-white text-2xl sm:text-3xl transition-colors duration-300" />,
+      title: "I believe in",
+      points: ["Creative content", "Fast communication & client satisfaction"],
       aos: "fade-left",
     },
   ];
@@ -49,11 +44,11 @@ const AboutMe = () => {
     <Fragment>
       <div
         id="about"
-        className="relative py-16 px-4 sm:px-6 md:px-12 lg:px-24 bg-gray-900 overflow-hidden"
+        className="relative py-15 mx-auto max-w-8xl bg-black overflow-hidden"
       >
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-28 sm:w-40 h-28 sm:h-40 bg-[#38bdf8] opacity-10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-purple-600 opacity-10 rounded-full blur-3xl animate-float-delay"></div>
+        <div className="absolute top-0 left-0 w-32 sm:w-40 h-32 sm:h-40 bg-red-600 opacity-20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-red-600 opacity-20 rounded-full blur-3xl animate-float-delay"></div>
 
         <div className="max-w-7xl mx-auto">
           {/* About Me Title */}
@@ -61,40 +56,40 @@ const AboutMe = () => {
             data-aos="fade-up"
             className="text-3xl sm:text-4xl font-bold text-white text-center mb-10"
           >
-            About <span className="text-[#38bdf8]">Me</span>
+            About <span className="text-red-600">Me</span>
           </h1>
 
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+          <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-12">
             {/* Image Section */}
             <div
               data-aos="zoom-in-down"
               className="w-full lg:w-2/5 relative group flex justify-center"
             >
-              <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-float-slow">
-                {/* hover background glow */}
-                <div className="absolute inset-0 rounded-full bg-[#38bdf8]/20 opacity-0 group-hover:opacity-100 transition duration-700 blur-3xl"></div>
+              <div className="relative w-72 h-[500px] sm:w-80 sm:h-[550px] md:w-96 md:h-[600px] lg:w-[400px] lg:h-auto animate-float-slow">
+                <div className="absolute inset-0 rounded-full bg-red-600/20 opacity-0 group-hover:opacity-80 transition duration-700 blur-3xl"></div>
 
                 <img
                   src={About}
-                  alt="Fakhar Abbas"
-                  className="w-full h-full object-cover rounded-full p-3 sm:p-4 border-4 border-[#38bdf8] z-10 relative shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:rotate-3"
+                  alt="Saba Arshad"
+                  className="w-full h-full object-cover rounded-full p-3 sm:p-4 border-4 border-red-600 z-10 relative shadow-xl transition-all duration-700 group-hover:scale-105 group-hover:rotate-3"
                 />
-                <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-30 z-0 animate-pulse"></div>
-                <div className="absolute inset-0 rounded-full border-4 border-[#38bdf8] opacity-15 z-0 animate-pulse-delay"></div>
+
+                <div className="absolute inset-0 rounded-full border-4 border-red-600 opacity-30 z-0 animate-pulse"></div>
+                <div className="absolute inset-0 rounded-full border-4 border-red-600 opacity-15 z-0 animate-pulse-delay"></div>
 
                 {/* Badges inside image */}
                 <span
                   data-aos="fade-down"
-                  className="absolute top-3 left-3 bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
+                  className="absolute top-3 left-3 bg-red-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
                 >
-                  Frontend Developer
+                  Graphic Design
                 </span>
                 <span
                   data-aos="fade-up"
                   data-aos-delay="200"
-                  className="absolute bottom-3 right-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
+                  className="absolute bottom-3 right-3 bg-red-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20"
                 >
-                  WordPress Expert
+                  Digital Marketing
                 </span>
               </div>
             </div>
@@ -104,52 +99,48 @@ const AboutMe = () => {
               {/* Name */}
               <h2
                 data-aos="zoom-in"
-                className="text-2xl sm:text-3xl font-bold text-white"
+                className="text-2xl font-bold text-white"
               >
-                I'm <span className="text-[#38bdf8]">Fakhar Abbas</span>, a
-                passionate Frontend Developer & WordPress Specialist
+                I'm <span className="text-red-600">Saba Arshad</span>, a dedicated Digital Marketing Specialist & Shopify Expert.
               </h2>
 
               {/* Description */}
               <p
                 data-aos="zoom-in-up"
-                className="text-gray-300 text-base sm:text-lg leading-relaxed"
+                className="text-white text-base sm:text-lg leading-relaxed"
               >
-                Specializing in React.js & WordPress, I craft exceptional digital
-                experiences with clean, efficient code and pixel-perfect
-                designs. My approach combines technical expertise with creative
-                problem-solving to deliver intuitive, high-performance web
-                applications that users love.
+                With hands-on experience in social media marketing, paid advertising, Shopify store setup, branding, and content creation, I help brands build a strong online presence and achieve real results.
+                Whether you need a high-converting Shopify store, engaging social media content, ad campaigns that bring results, or complete brand management — I’m here to help you grow with confidence. <span className="text-red-600 font-semibold">My goal is simple:</span> Deliver work that creates impact, builds trust, and helps your business move forward.
               </p>
 
-              {/* Skills */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-                {skills.map((skill, index) => (
+              {/* Belief Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                {beliefs.map((item, index) => (
                   <div
                     key={index}
-                    data-aos={skill.aos}
+                    data-aos={item.aos}
                     data-aos-delay={index * 150}
-                    className="bg-gray-800 p-5 sm:p-6 rounded-xl hover:bg-gray-700 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-lg hover:shadow-[#38bdf8]/30"
+                    className="bg-black border-2 border-red-600 p-6 sm:p-8 rounded-xl hover:bg-red-600 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-lg hover:shadow-red-600/30 group"
                   >
                     <div className="flex items-center justify-center lg:justify-start gap-3 mb-3">
-                      {skill.icon}
-                      <h3 className="text-white font-medium text-lg">
-                        {skill.title}
-                      </h3>
+                      {item.icon}
+                      <h3 className="text-white font-medium text-lg group-hover:text-white">{item.title}</h3>
                     </div>
-                    <p className="text-gray-400 text-sm sm:text-base">
-                      {skill.description}
-                    </p>
+                    {item.points.map((point, idx) => (
+                      <p key={idx} className="text-white text-sm sm:text-base flex items-start gap-2 group-hover:text-white">
+                        <span className="text-red-600 group-hover:text-white transition-colors duration-300">•</span> {point}
+                      </p>
+                    ))}
                   </div>
                 ))}
               </div>
 
-              {/* Button */}
+              {/* Download CV Button */}
               <div className="flex justify-center lg:justify-start">
                 <button
                   onClick={handleDownload}
                   data-aos="flip-up"
-                  className="mt-8 bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9] hover:from-[#0ea5e9] hover:to-[#38bdf8] text-white px-6 py-2 sm:py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-500 transform hover:scale-110 shadow-lg hover:shadow-[#38bdf8]/40"
+                  className="mt-8 bg-red-600 hover:bg-white hover:text-red-600 text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-500 transform hover:scale-110 shadow-lg hover:shadow-red-600/40"
                 >
                   Download CV <FaDownload />
                 </button>
@@ -162,60 +153,26 @@ const AboutMe = () => {
       {/* Animations */}
       <style jsx global>{`
         @keyframes float {
-          0%,
-          100% {
-            transform: translateY(0) translateX(0);
-          }
-          50% {
-            transform: translateY(-20px) translateX(10px);
-          }
+          0%, 100% { transform: translateY(0) translateX(0); }
+          50% { transform: translateY(-20px) translateX(10px); }
         }
         @keyframes float-slow {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
         }
         @keyframes pulse {
-          0%,
-          100% {
-            opacity: 0.3;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.5;
-            transform: scale(1.05);
-          }
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.5; transform: scale(1.05); }
         }
         @keyframes pulse-delay {
-          0%,
-          100% {
-            opacity: 0.15;
-            transform: scale(1);
-          }
-          50% {
-            opacity: 0.25;
-            transform: scale(1.1);
-          }
+          0%, 100% { opacity: 0.15; transform: scale(1); }
+          50% { opacity: 0.25; transform: scale(1.1); }
         }
-        .animate-float {
-          animation: float 8s ease-in-out infinite;
-        }
-        .animate-float-delay {
-          animation: float 10s ease-in-out infinite 2s;
-        }
-        .animate-float-slow {
-          animation: float-slow 6s ease-in-out infinite;
-        }
-        .animate-pulse {
-          animation: pulse 4s ease-in-out infinite;
-        }
-        .animate-pulse-delay {
-          animation: pulse-delay 4s ease-in-out infinite 2s;
-        }
+        .animate-float { animation: float 8s ease-in-out infinite; }
+        .animate-float-delay { animation: float 10s ease-in-out infinite 2s; }
+        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+        .animate-pulse { animation: pulse 4s ease-in-out infinite; }
+        .animate-pulse-delay { animation: pulse-delay 4s ease-in-out infinite 2s; }
       `}</style>
     </Fragment>
   );

@@ -1,14 +1,8 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaBootstrap,
-} from "react-icons/fa";
-import { SiWordpress, SiTailwindcss } from "react-icons/si";
+import { FaFacebookF, FaInstagram, FaYoutube, FaShopify, FaRocket, FaChartLine  } from "react-icons/fa";
+import { SiCanva} from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 const MySkills = () => {
@@ -22,17 +16,16 @@ const MySkills = () => {
   }, []);
 
   const skills = [
-    { name: "HTML5", icon: <FaHtml5 />, percentage: 90, color: "bg-[#E44D26]" },
-    { name: "CSS3", icon: <FaCss3Alt />, percentage: 85, color: "bg-[#264DE4]" },
-    { name: "Bootstrap", icon: <FaBootstrap />, percentage: 80, color: "bg-[#7952B3]" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss />, percentage: 90, color: "bg-[#38BDF8]" },
-    { name: "Framer Motion", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-[#0055FF]" },
-    { name: "JavaScript", icon: <FaJs />, percentage: 75, color: "bg-[#F7DF1E]" },
-    { name: "React.js", icon: <FaReact />, percentage: 80, color: "bg-[#61DAFB]" },
-    { name: "WordPress", icon: <SiWordpress />, percentage: 92, color: "bg-[#21759B]" },
+    { name: "Social Media Management", icon: <FaFacebookF />, percentage: 90, color: "bg-red-600" },
+    { name: "Content Creation", icon: <SiCanva />, percentage: 85, color: "bg-red-600" },
+    { name: "Facebook & Instagram Ads", icon: <FaInstagram />, percentage: 80, color: "bg-red-600" },
+    { name: "Video Editing & Branding", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-red-600" },
+    { name: "Shopify Setup & Management", icon: <FaShopify />, percentage: 75, color: "bg-red-600" },
+    { name: "SEO Basics", icon: <FaRocket />, percentage: 80, color: "bg-red-600" },
+    { name: "Analytics & Reporting", icon: < FaChartLine  />, percentage: 92, color: "bg-red-600" },
+    { name: "Canva Designing", icon: <SiCanva />, percentage: 90, color: "bg-red-600" },
   ];
 
-  // Different AOS animations
   const animations = [
     "fade-up",
     "fade-down",
@@ -45,10 +38,10 @@ const MySkills = () => {
   ];
 
   return (
-    <section id="skills" className="relative py-20 px-6 bg-gray-900 overflow-hidden">
+    <section id="skills" className="relative py-15 mx-auto max-w-8xl bg-black overflow-hidden">
       {/* Background gradient effects */}
-      <div className="absolute top-0 right-0 w-40 h-40 bg-[#38bdf8] opacity-20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 left-0 w-60 h-60 bg-[#0ea5e9] opacity-20 rounded-full blur-3xl animate-float-delay"></div>
+      <div className="absolute top-0 right-0 w-40 h-40 bg-red-600 opacity-20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-600 opacity-20 rounded-full blur-3xl animate-float-delay"></div>
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -56,15 +49,14 @@ const MySkills = () => {
             data-aos="zoom-in"
             className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
-            My <span className="text-[#38bdf8]">Skills</span>
+            My <span className="text-red-600">Skills</span>
           </h2>
           <p
             data-aos="fade-up"
             data-aos-delay="150"
             className="text-gray-400 text-lg max-w-2xl mx-auto"
           >
-            A showcase of the technologies and frameworks I use to craft scalable,
-            modern, and visually engaging digital experiences.
+            Showcasing my expertise in SEO, social media, content creation, paid ads, analytics, branding, and digital strategies for growth.
           </p>
         </div>
 
@@ -72,20 +64,20 @@ const MySkills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
             <div
-              data-aos={animations[index % animations.length]} // Different AOS per card
+              data-aos={animations[index % animations.length]}
               data-aos-delay={index * 120}
               key={index}
-              className="relative bg-gray-800/60 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 h-64 flex flex-col justify-between transition-all duration-500 hover:shadow-xl hover:shadow-[#38bdf8]/30 hover:-translate-y-2"
+              className="relative bg-black/80 border border-red-600 rounded-2xl p-6 h-64 flex flex-col justify-between transition-all duration-500 hover:shadow-xl hover:shadow-red-600/40 hover:-translate-y-2 group"
             >
               {/* Icon */}
               <div className="flex justify-center items-center mb-4">
-                <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 text-4xl text-[#38bdf8] group-hover:scale-110 transition-transform duration-500">
+                <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-red-600 text-4xl text-white group-hover:bg-white group-hover:text-red-600 transition-all duration-500">
                   {skill.icon}
                 </div>
               </div>
 
               {/* Skill Name */}
-              <h3 className="text-xl font-semibold text-white text-center">
+              <h3 className="text-xl font-semibold text-white text-center group-hover:text-red-600 transition-colors duration-500">
                 {skill.name}
               </h3>
 
