@@ -67,7 +67,7 @@ const Navbar = () => {
             </span>
           </motion.div>
 
-          {/* Nav Items */}
+          {/* Desktop Nav Items */}
           <div className="hidden lg:flex flex-1 justify-center">
             <ul className="flex items-center gap-10">
               {navItems.map((item, index) => (
@@ -141,7 +141,7 @@ const Navbar = () => {
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <motion.ul className="container mx-auto px-6 py-4 flex flex-col gap-6">
+              <motion.ul className="container mx-auto px-6 py-4 flex flex-col gap-6 items-center">
                 {[...navItems, { name: "Contact", href: "#contact" }].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -150,15 +150,15 @@ const Navbar = () => {
                     animate="visible"
                     exit="exit"
                     transition={{ duration: 0.2, delay: index * 0.05 }}
-                    className="border-b border-red-900 pb-2 last:border-0"
+                    className="border-b border-red-900 pb-2 last:border-0 w-full text-center"
                   >
                     <a
                       onClick={closeMenu}
                       href={item.href}
-                      className="flex items-center justify-between text-white text-lg font-medium relative transition-all duration-300 group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-red-600 hover:to-white"
+                      className="inline-block text-white text-lg font-medium transition-all duration-300 group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-red-600 hover:to-white"
                     >
                       {item.name}
-                      <FaArrowRight className="text-red-600 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                      <FaArrowRight className="text-red-600 opacity-0 group-hover:opacity-100 transition-all duration-300 ml-2" />
                     </a>
                   </motion.li>
                 ))}
