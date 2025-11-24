@@ -38,16 +38,17 @@ const MySkills = () => {
   ];
 
   return (
-    <section id="skills" className="relative py-15 mx-auto max-w-8xl bg-black overflow-hidden">
+    <div className="pt-8 pb-8 border-t-1 border-red-500">
+    <section id="skills" className="relative overflow-hidden">
       {/* Background gradient effects */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-red-600 opacity-20 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-600 opacity-20 rounded-full blur-3xl animate-float-delay"></div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto p-5">
         <div className="text-center mb-16">
           <h2
             data-aos="zoom-in"
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-4xl md:text-5xl font-bold text-white pt-5 mb-10"
           >
             My <span className="text-red-600">Skills</span>
           </h2>
@@ -111,6 +112,7 @@ const MySkills = () => {
         .animate-float-delay { animation: float-delay 10s ease-in-out infinite 2s; }
       `}</style>
     </section>
+    </div>
   );
 };
 

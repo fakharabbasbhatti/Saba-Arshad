@@ -73,16 +73,17 @@ const MyServices = () => {
 
   return (
     <Fragment>
-      <section id="services" className="relative py-16 mx-auto max-w-8xl bg-black overflow-hidden">
+      <div className="pt-8 pb-8 border-t-1 border-red-500">
+      <section id="services" className="relative mx-auto max-w-8xl bg-black overflow-hidden ">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-40 h-40 bg-red-600 opacity-10 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-600 opacity-10 rounded-full blur-3xl animate-float-delay"></div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto p-5">
           <div className="text-center mb-16">
             <h1 
               data-aos="fade-down"
-              className="text-4xl md:text-5xl font-extrabold text-white mb-4 relative inline-block group"
+              className="text-4xl md:text-5xl font-extrabold text-white relative inline-block group pt-3 mb-10"
             >
               Our <span data-aos="zoom-in" data-aos-delay="100" className="text-red-600">Services</span>
             </h1>
@@ -99,7 +100,7 @@ const MyServices = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden bg-black border border-red-600 rounded-2xl p-8 h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-red-600/30"
+                className="group relative overflow-hidden bg-black border border-red-600 rounded-2xl p-5 md:p-8 h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-red-600/30"
               >
                 <div className="relative z-10">
                   <div 
@@ -145,6 +146,7 @@ const MyServices = () => {
         .animate-float { animation: float 8s ease-in-out infinite; }
         .animate-float-delay { animation: float-delay 10s ease-in-out infinite 2s; }
       `}</style>
+      </div>
     </Fragment>
   );
 };

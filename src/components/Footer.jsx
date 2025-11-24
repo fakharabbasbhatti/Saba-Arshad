@@ -19,10 +19,12 @@ const quickLinks = [
 ];
 
 const customerService = [
-  { name: "Customer Service", href: "" },
-  { name: "FAQs", href: "" },
-  { name: "Privacy Policy", href: "" },
-  { name: "Terms & Conditions", href: "" },
+  { name: "Social Media Management", href: "" },
+  { name: "Content Creation", href: "" },
+  { name: "Facebook & Instagram Ads", href: "" },
+  { name: "Video Editing & Branding", href: "" },
+  { name: "Shopify Setup & Management", href: "" },
+  { name: "Canva Designing", href: "" },
 ];
 
 export default function Footer() {
@@ -108,7 +110,7 @@ export default function Footer() {
         <div className="flex flex-col items-center max-w-screen-xl mx-auto border-t border-gray-300 pt-5 text-gray-200 text-sm">
           <p>
             Made with <span className="text-red-500">❤️</span> by{" "}
-            <span className="font-bold">Fakhar Abbas</span> © {new Date().getFullYear()}
+            <span className="font-bold">Saba Arshad</span> © {new Date().getFullYear()}
           </p>
         </div>
       </div>

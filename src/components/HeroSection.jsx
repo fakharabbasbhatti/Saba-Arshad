@@ -44,9 +44,10 @@ const HeroSection = () => {
 
   return (
     <Fragment>
+      <div className="pt-8 md:pb-8">
       <section
         id="home"
-        className="relative flex justify-center items-center min-h-screen mx-auto max-w-8xl bg-black overflow-hidden pt-10"
+        className="relative flex justify-center items-center min-h-screen mx-auto max-w-8xl bg-black overflow-hidden"
       >
         {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden">
@@ -60,7 +61,7 @@ const HeroSection = () => {
           ></div>
         </div>
 
-        <div className="flex flex-col-reverse md:flex-row items-center gap-12 w-full max-w-7xl z-10 py-20">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-12 w-full max-w-8xl z-10 py-15 md:py-20 p-4  md:p-5">
           {/* Left Section */}
           <div className="w-full md:w-1/2 text-center md:text-start">
             <span
@@ -151,7 +152,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Section (Hero Image) */}
-          <div data-aos="zoom-in" className="w-full md:w-1/2 flex justify-center relative">
+          <div data-aos="zoom-in" className="w-full md:w-3/4 flex justify-center relative">
             <div className="relative h-[250px] w-[250px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] animate-float-slow group">
               <div className="absolute inset-0 rounded-full border-4 border-red-600 opacity-30 animate-pulse"></div>
               <div className="absolute inset-0 rounded-full border-4 border-white opacity-20 animate-pulse-delay"></div>
@@ -198,6 +199,7 @@ const HeroSection = () => {
           .animate-pulse-delay { animation: pulse-delay 5s ease-in-out infinite 1s; }
         `}</style>
       </section>
+      </div>
     </Fragment>
   );
 };

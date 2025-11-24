@@ -69,10 +69,10 @@ function App() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/9232292345045"
+        href="https://wa.me/923206301580"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 bg-red-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform"
+        className="fixed bottom-5 right-5 bg-green-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-10"
       >
         <FaWhatsapp size={28} />
       </a>

@@ -42,19 +42,20 @@ const AboutMe = () => {
 
   return (
     <Fragment>
+      <div className="pt-8 pb-8 border-t-1 border-red-500">
       <div
         id="about"
-        className="relative py-15 mx-auto max-w-8xl bg-black overflow-hidden"
+        className="relative mx-auto max-w-8xl bg-black overflow-hidden"
       >
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-32 sm:w-40 h-32 sm:h-40 bg-red-600 opacity-20 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-0 right-0 w-40 sm:w-60 h-40 sm:h-60 bg-red-600 opacity-20 rounded-full blur-3xl animate-float-delay"></div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           {/* About Me Title */}
           <h1
             data-aos="fade-up"
-            className="text-3xl sm:text-4xl font-bold text-white text-center mb-10"
+            className="text-3xl sm:text-4xl font-bold text-white text-center pt-5 mb-20"
           >
             About <span className="text-red-600">Me</span>
           </h1>
@@ -95,7 +96,7 @@ const AboutMe = () => {
             </div>
 
             {/* Content Section */}
-            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
+            <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left p-3">
               {/* Name */}
               <h2
                 data-aos="zoom-in"
@@ -149,7 +150,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-
+</div>
       {/* Animations */}
       <style jsx global>{`
         @keyframes float {
