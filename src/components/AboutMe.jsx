@@ -66,7 +66,7 @@ const AboutMe = () => {
                 <div className="absolute inset-0 rounded-full border-4 border-red-600 opacity-15 animate-pulse-delay"></div>
 
                 {/* Badges */}
-                <span className="absolute top-3 left-3 bg-red-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20">Graphic Design</span>
+                <span className="absolute top-3 left-3 bg-red-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20">Shopify store</span>
                 <span className="absolute bottom-3 right-3 bg-red-600 text-white text-xs sm:text-sm px-3 py-1 rounded-full shadow-md font-medium z-20">Digital Marketing</span>
               </div>
             </div>

@@ -105,7 +105,7 @@ const HeroSection = () => {
                 className="w-full h-full object-cover rounded-full border-4 border-red-600 shadow-2xl relative transition-all duration-700 group-hover:scale-105 group-hover:rotate-3 p-3 sm:p-5"
               />
 
-              <div className="absolute top-2 left-2 bg-red-600 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">Graphic Design</div>
+              <div className="absolute top-2 left-2 bg-red-600 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">Shopify Store</div>
               <div className="absolute bottom-2 right-2 bg-red-600 text-white text-xs sm:text-sm md:text-base font-semibold px-3 py-1 rounded-full shadow-lg">Digital Marketing</div>
             </div>
           </div>

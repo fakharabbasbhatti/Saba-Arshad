@@ -33,7 +33,7 @@ const MyServices = () => {
 
           <div className="text-center relative z-10">
             <h1 data-aos="fade-down" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white relative inline-block group pt-3 mb-6 sm:mb-10">
-              Our <span data-aos="zoom-in" data-aos-delay="100" className="text-red-600">Services</span>
+            My <span data-aos="zoom-in" data-aos-delay="100" className="text-red-600">Services</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="150" className="text-white text-base sm:text-lg max-w-2xl mx-auto mb-12 sm:mb-16">
               Delivering tailored digital solutions to empower your business growth and innovation.
