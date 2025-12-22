@@ -1,8 +1,9 @@
-import { Fragment, useEffect } from "react"; 
-import { FaPaperPlane, FaRocket, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Fragment, useEffect } from "react";
+import { FaPaperPlane, FaRocket, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 import { RiTiktokLine } from "react-icons/ri";
 import { Typewriter } from "react-simple-typewriter";
-import Hero from "../Images/sabaarshad.jpg";
+import Hero from "../Images/asifbhatti.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,16 +18,16 @@ const HeroSection = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <FaFacebookF className="h-5 w-5" />, url: "https://www.facebook.com/profile.php?id=61572806127729", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-left" },
-    { icon: <FaInstagram className="h-5 w-5" />, url: "https://www.instagram.com/sabamarketingagency?igsh=Mzc5MHRhd2xtOTVt", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-up" },
-    { icon: <RiTiktokLine className="h-5 w-5" />, url: "https://www.tiktok.com/@sabaarshad4914?_r=1&_t=ZN-91aqibMqThO", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-right" },
-    { icon: <FaYoutube className="h-5 w-5" />, url: "https://youtube.com/@sabamarketingagency?si=xTnnHVcj0W-fb0jE", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-left" },
+    { icon: <FaFacebookF className="h-5 w-5" />, url: "https://www.facebook.com/asif.bhatti.769248?_rdc=1&_rdr#", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-left" },
+    { icon: <FaInstagram className="h-5 w-5" />, url: "https://www.instagram.com/asif_bhatti64672/", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-up" },
+    { icon: <RiTiktokLine className="h-5 w-5" />, url: "https://www.tiktok.com/@asif.bhatti64672", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-right" },
+    { icon: <FaBriefcase className="h-5 w-5" />, url: "https://heylink.me/asl.digitalcreator/", color: "hover:bg-red-600 hover:shadow-[0_0_15px_#ff2e2e]", aos: "flip-left" },
   ];
 
   return (
     <Fragment>
       <section id="home" className="relative items-center min-h-screen bg-black overflow-hidden mx-auto max-w-9xl pt-8 md:pb-8">
-        
+
         {/* Background Circles */}
         <div className="absolute inset-0 overflow-hidden">
           <div data-aos="zoom-in" className="absolute top-20 left-10 sm:left-20 w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-red-600 opacity-20 blur-3xl animate-float"></div>
@@ -37,10 +38,20 @@ const HeroSection = () => {
 
           {/* Left Section */}
           <div className="w-full md:w-1/2 text-center md:text-start">
-            <span data-aos="fade-down" className="text-red-600 font-mono tracking-widest text-base sm:text-lg">👋 Hello, I'm</span>
-            <h1 data-aos="fade-right" className="text-white text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">Saba Arshad</h1>
+             <p
+              data-aos="fade-up"
+              className="inline-flex items-center gap-2 px-5 py-2 mb-5 mx-auto md:mx-0
+             text-white text-sm sm:text-base font-medium
+             bg-red-800 rounded-full shadow-md"
+            >
+              CEO & Founder
+              <span className="font-bold text-red-300">
+                ASL DIGITAL CREATOR
+              </span>
+            </p>
+            <h1 data-aos="fade-right" className="text-white text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">Asif Bhatti</h1>
 
-            <div data-aos="fade-left" className="text-lg sm:text-xl md:text-2xl font-medium mb-6 h-10 sm:h-12">
+            {/* <div data-aos="fade-left" className="text-lg sm:text-xl md:text-2xl font-medium mb-6 h-10 sm:h-12">
               <span className="text-white">
                 <Typewriter
                   words={["Digital Marketing", "Graphic Design", "Video Editing", "Youtube Automation", "Shopify Expert"]}
@@ -52,10 +63,10 @@ const HeroSection = () => {
                   delaySpeed={2000}
                 />
               </span>
-            </div>
-
+            </div> */}
+           
             <p data-aos="fade-up" className="text-white text-base sm:text-lg mb-8 max-w-lg mx-auto md:mx-0">
-              I’m Saba Arshad — a Digital Marketing Specialist & Shopify Expert. I help brands grow online <span className="text-red-600 font-semibold">create professional content</span> & <span className="text-white font-semibold">increase their sales,</span> specializing in Social Media Management, Paid Ads, Shopify Store Setup, and Content Creation.
+              I’m Asif Bhatti — a Digital Marketing Specialist & Shopify Expert. I help brands grow online <span className="text-red-600 font-semibold">create professional content</span> & <span className="text-white font-semibold">increase their sales,</span> specializing in Social Media Management, Paid Ads, Shopify Store Setup, and Content Creation.
             </p>
 
             {/* Buttons */}
@@ -101,7 +112,7 @@ const HeroSection = () => {
 
               <img
                 src={Hero}
-                alt="Saba Arshad profile"
+                alt="Asif Bhatti profile"
                 className="w-full h-full object-cover rounded-full border-4 border-red-600 shadow-2xl relative transition-all duration-700 group-hover:scale-105 group-hover:rotate-3 p-3 sm:p-5"
               />
 

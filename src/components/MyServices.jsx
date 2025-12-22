@@ -18,9 +18,9 @@ const MyServices = () => {
     { icon: <FaFacebookF />, title: "Social Media Management", description: "Managing and optimizing social media platforms to grow engagement, followers, and brand awareness.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-right", aosDesc: "fade-up" },
     { icon: <SiCanva />, title: "Content Creation", description: "Designing visually appealing graphics and posts using Canva for consistent, high-quality content.", color: "red", aosIcon: "zoom-in", aosTitle: "flip-right", aosDesc: "fade-up" },
     { icon: <FaInstagram />, title: "Facebook & Instagram Ads", description: "Creating and managing paid campaigns to drive traffic, conversions, and brand growth on social platforms.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-up", aosDesc: "fade-right" },
-    { icon: <FaVideo />, title: "Video Editing & Branding", description: "Editing videos and crafting brand identity visuals to enhance digital presence and engagement.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-left", aosDesc: "fade-up" },
+    { icon: <FaVideo />, title: "Video Editing & AI-Generated", description: "Editing videos and crafting brand identity visuals to enhance digital presence and engagement.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-left", aosDesc: "fade-up" },
     { icon: <FaShopify />, title: "Shopify Setup & Management", description: "Setting up and managing Shopify stores for seamless online shopping experiences and high conversions.", color: "red", aosIcon: "zoom-in", aosTitle: "flip-left", aosDesc: "fade-up" },
-    { icon: <SiCanva />, title: "Canva Designing", description: "Creating visually appealing graphics with Canva to engage audiences and maintain consistent brand identity.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-down", aosDesc: "fade-up" }
+    { icon: <SiCanva />, title: "Graphics Designing", description: "Creating visually appealing graphics with Canva to engage audiences and maintain consistent brand identity.", color: "red", aosIcon: "zoom-in", aosTitle: "fade-down", aosDesc: "fade-up" }
   ];
 
   return (

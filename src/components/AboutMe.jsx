@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
-import About from "../Images/sabaarshad.jpg";
-import resume from "../Images/SabaArshad.pdf";
+import About from "../Images/asifbhatti.jpeg";
+import resume from "../Images/AsifBhatti.pdf";
 import { FaDownload, FaRocket } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -18,7 +18,7 @@ const AboutMe = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "SabaArshad.pdf";
+    link.download = "AsifBhatti.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -27,13 +27,13 @@ const AboutMe = () => {
   const beliefs = [
     {
       icon: <FaRocket className="text-red-600 group-hover:text-white text-2xl sm:text-3xl transition-colors duration-300" />,
-      title: "I believe in",
+      title: "My Mission",
       points: ["Clear strategies", "Professional execution"],
       aos: "fade-right",
     },
     {
       icon: <FaRocket className="text-red-600 group-hover:text-white text-2xl sm:text-3xl transition-colors duration-300" />,
-      title: "I believe in",
+      title: "My Vision",
       points: ["Creative content", "Fast communication & client satisfaction"],
       aos: "fade-left",
     },
@@ -59,7 +59,7 @@ const AboutMe = () => {
                 <div className="absolute inset-0 rounded-full bg-red-600/20 opacity-0 group-hover:opacity-80 transition duration-700 blur-3xl"></div>
                 <img
                   src={About}
-                  alt="Saba Arshad"
+                  alt="Asif Bhatti"
                   className="w-full h-full object-cover rounded-full p-3 sm:p-4 border-4 border-red-600 shadow-xl relative z-10 transition-all duration-700 group-hover:scale-105 group-hover:rotate-3"
                 />
                 <div className="absolute inset-0 rounded-full border-4 border-red-600 opacity-30 animate-pulse"></div>
@@ -74,12 +74,11 @@ const AboutMe = () => {
             {/* Content */}
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <h2 data-aos="zoom-in" className="text-2xl sm:text-3xl font-bold text-white">
-                I'm <span className="text-red-600">Saba Arshad</span>, a dedicated Digital Marketing Specialist & Shopify Expert.
+                I'm <span className="text-red-600">Asif Bhatti</span>, a dedicated Digital Marketing Specialist & Shopify Expert.
               </h2>
 
               <p data-aos="zoom-in-up" className="text-white text-base sm:text-lg leading-relaxed">
-                With hands-on experience in social media marketing, paid advertising, Shopify store setup, branding, and content creation, I help brands build a strong online presence and achieve real results. Whether you need a high-converting Shopify store, engaging social media content, ad campaigns that bring results, or complete brand management — I’m here to help you grow with confidence. <span className="text-red-600 font-semibold">My goal is simple:</span> Deliver work that creates impact, builds trust, and helps your business move forward.
-              </p>
+               With a passion for helping brands and creators succeed online, I specialize in crafting digital strategies that drive engagement, growth, and measurable results. From <span className="text-red-600 font-semibold">Social Media Campaigns to e-commerce solutions, video production to lead generation.</span> I bring a creative and analytical approach to every project ensuring ideas are not only executed but also impactful.</p>
 
               {/* Belief Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">

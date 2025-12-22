@@ -61,7 +61,8 @@ const Navbar = () => {
 
             <span className="ml-2 text-white font-bold text-xl hidden sm:block relative overflow-hidden">
               <span className="relative z-10 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-red-600 group-hover:to-white">
-                Saba Arshad
+                Asif Bhatti
+
               </span>
               <span className="absolute inset-0 translate-x-[-120%] group-hover:translate-x-[120%] transition-transform duration-700 ease-in-out skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent"></span>
             </span>

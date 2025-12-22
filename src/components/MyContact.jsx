@@ -29,10 +29,10 @@ const MyContact = () => {
   };
 
   const contactInfo = [
-    { icon: <MdLocationPin className="text-3xl" />, text: "Bahawalpur, Punjab, Pakistan", link: "#" },
-    { icon: <MdOutlineAlternateEmail className="text-3xl" />, text: "zingster663@gmail.com", link: "mailto:zingster663@gmail.com" },
-    { icon: <FaPhoneAlt className="text-3xl" />, text: "+92 320-6301580", link: "tel:+923206301580" },
-    { icon: <CgWebsite className="text-3xl" />, text: "https://chsaba-arshad.vercel.app/", link: "https://chsaba-arshad-marketing.vercel.app/" },
+    { icon: <MdLocationPin className="text-2xl" />, text: "Bahawalpur, Punjab, Pakistan", link: "Bahawalpur, Punjab, Pakistan" },
+    { icon: <MdOutlineAlternateEmail className="text-2xl" />, text: "asl.digitalcreator@gmail.com ", link: "mailto:asl.digitalcreator@gmail.com" },
+    { icon: <FaPhoneAlt className="text-2xl" />, text: "+92 327-9681646", link: "tel:+923279681646" },
+    { icon: <CgWebsite className="text-2xl" />, text: "https://asif-bhatti.vercel.app/", link: "https://asif-bhatti.vercel.app/" },
   ];
 
   return (
@@ -67,7 +67,7 @@ const MyContact = () => {
                       type="text"
                       name="from_name"
                       required
-                      placeholder="Sarha Json"
+                      placeholder="Jordan"
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black border border-red-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-white"
                     />
                   </div>
@@ -77,7 +77,7 @@ const MyContact = () => {
                       type="email"
                       name="from_email"
                       required
-                      placeholder="sarhajson@example.com"
+                      placeholder="Jordan@example.com"
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black border border-red-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 text-white"
                     />
                   </div>

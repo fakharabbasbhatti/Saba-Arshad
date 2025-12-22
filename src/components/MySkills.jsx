@@ -19,11 +19,11 @@ const MySkills = () => {
     { name: "Social Media Management", icon: <FaFacebookF />, percentage: 90, color: "bg-red-600" },
     { name: "Content Creation", icon: <SiCanva />, percentage: 85, color: "bg-red-600" },
     { name: "Facebook & Instagram Ads", icon: <FaInstagram />, percentage: 80, color: "bg-red-600" },
-    { name: "Video Editing & Branding", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-red-600" },
+    { name: "Video Editing & AI-Generated", icon: <TbBrandFramerMotion />, percentage: 86, color: "bg-red-600" },
     { name: "Shopify Setup & Management", icon: <FaShopify />, percentage: 75, color: "bg-red-600" },
-    { name: "SEO Basics", icon: <FaRocket />, percentage: 80, color: "bg-red-600" },
+    { name: "YouTube Automation & Optimization", icon: <FaRocket />, percentage: 80, color: "bg-red-600" },
     { name: "Analytics & Reporting", icon: <FaChartLine />, percentage: 92, color: "bg-red-600" },
-    { name: "Canva Designing", icon: <SiCanva />, percentage: 90, color: "bg-red-600" },
+    { name: "Graphics Designing", icon: <SiCanva />, percentage: 90, color: "bg-red-600" },
   ];
 
   const animations = [
@@ -79,7 +79,7 @@ const MySkills = () => {
                 </div>
 
                 {/* Skill Name */}
-                <h3 className="text-xl sm:text-lg md:text-xl font-semibold text-white text-center group-hover:text-red-600 transition-colors duration-500">
+                <h3 className="text-xl sm:text-lg  font-semibold text-white text-center group-hover:text-red-600 transition-colors duration-500">
                   {skill.name}
                 </h3>
 

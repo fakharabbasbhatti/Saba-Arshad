@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
-import { FaUser, FaFacebookF, FaInstagram, FaYoutube, FaAngleRight } from "react-icons/fa";
+import { FaUser, FaFacebookF, FaInstagram, FaAngleRight } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 import { RiTiktokLine } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // SOCIAL ICONS (Red, Black, White Theme)
 const socialLinks = [
-  { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61572806127729", label: "Facebook", color: "text-white hover:text-red-500" },
-  { icon: <FaInstagram />, href: "https://www.instagram.com/sabamarketingagency?igsh=Mzc5MHRhd2xtOTVt", label: "Instagram", color: "text-white hover:text-red-500" },
-  { icon: <RiTiktokLine />, href: "https://www.tiktok.com/@sabaarshad4914?_r=1&_t=ZN-91aqibMqThO", label: "TikTok", color: "text-black bg-white p-2 rounded-full hover:bg-red-500 hover:text-white" },
-  { icon: <FaYoutube />, href: "https://youtube.com/@sabamarketingagency?si=xTnnHVcj0W-fb0jE", label: "YouTube", color: "text-white hover:text-red-600" },
+  { icon: <FaFacebookF />, href: "https://www.facebook.com/asif.bhatti.769248?_rdc=1&_rdr#", label: "Facebook", color: "text-white hover:text-red-500" },
+  { icon: <FaInstagram />, href: "https://www.instagram.com/asif_bhatti64672/", label: "Instagram", color: "text-white hover:text-red-500" },
+  { icon: <RiTiktokLine />, href: "https://www.tiktok.com/@asif.bhatti64672", label: "TikTok", color: "text-black bg-white p-2 rounded-full hover:bg-red-500 hover:text-white" },
+  { icon: <FaBriefcase />, href: "https://heylink.me/asl.digitalcreator/", label: "Hire Me", color: "text-white hover:text-red-600" },
 ];
 
 // QUICK LINKS + CUSTOMER SERVICE
@@ -28,7 +29,7 @@ const customerService = [
   { name: "Facebook & Instagram Ads", href: "" },
   { name: "Video Editing & Branding", href: "" },
   { name: "Shopify Setup & Management", href: "" },
-  { name: "Canva Designing", href: "" },
+  { name: "Graphics Designing", href: "" },
 ];
 
 export default function Footer() {
@@ -116,7 +117,7 @@ export default function Footer() {
         <div className="flex flex-col items-center max-w-screen-xl mx-auto border-t border-gray-700 pt-5 text-gray-300 text-sm">
           <p>
             Made with <span className="text-red-500">❤️</span> by{" "}
-            <span className="font-bold text-white">Saba Arshad</span> © {new Date().getFullYear()}
+            <span className="font-bold text-white">Asif Bhatti</span> © {new Date().getFullYear()}
           </p>
         </div>
       </div>
