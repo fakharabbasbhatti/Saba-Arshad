@@ -74,7 +74,7 @@ const AboutMe = () => {
             {/* Content */}
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <h2 data-aos="zoom-in" className="text-2xl sm:text-3xl font-bold text-white">
-                I'm <span className="text-red-600">Saba jutti</span>, a dedicated Digital Marketing Specialist & Shopify Expert good work ehit.
+                I'm <span className="text-red-600">Saba Arshad</span>, a dedicated Digital Marketing Specialist & Shopify Expert.
               </h2>
 
               <p data-aos="zoom-in-up" className="text-white text-base sm:text-lg leading-relaxed">
