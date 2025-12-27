@@ -78,7 +78,7 @@ const AboutMe = () => {
               </h2>
 
               <p data-aos="zoom-in-up" className="text-white text-base sm:text-lg leading-relaxed">
-               With a passion for helping brands and creators succeed online, I specialize in crafting digital strategies that drive engagement, growth, and measurable results. From <span className="text-red-600 font-semibold">Social Media Campaigns to e-commerce solutions, video production to lead generation.</span> I bring a creative and analytical approach to every project ensuring ideas are not only executed but also impactful.I bring a creative and analytical approach to every project ensuring ideas are not only executed but also impactful.</p>
+               With a passion for helping brands and creators succeed online, I specialize in crafting digital strategies that drive engagement, growth, and measurable results. From <span className="text-red-600 font-semibold">Social Media Campaigns to e-commerce solutions, video production to lead generation.</span> I bring a creative and analytical approach to every project ensuring ideas are not only executed but also impactful.</p>
 
               {/* Belief Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
