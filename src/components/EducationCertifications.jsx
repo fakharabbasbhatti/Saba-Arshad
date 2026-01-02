@@ -19,8 +19,8 @@ const EducationCertifications = () => {
   ];
 
   const experience = [
-    { title: "Digital Marketing", period: "2024 - Present", titleTwo: "Event Organization", icon: <FaBriefcase className="text-white text-2xl" /> },
-    { title: "Social Media Marketing", period: "Jan 2025 - Present", titleTwo: "E-Commerce", icon: <FaBriefcase className="text-white text-2xl" /> },
+    { title: "Social Media Marketing", period: "2023", titleTwo: "Digital Marketing", icon: <FaBriefcase className="text-white text-2xl" /> },
+    { title: "Event Organization", period: "2024", titleTwo: "E-Commerce", icon: <FaBriefcase className="text-white text-2xl" /> },
   ];
 
   return (
