@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutMe from './components/AboutMe';
 import MySkills from './components/MySkills';
-import EducationExperience from './components/EducationExperience';
+import EducationCertifications from './components/EducationCertifications';
 import MyServices from './components/MyServices';
 import MyProjects from './components/MyProjects';
 import MyContact from './components/MyContact';
@@ -61,7 +61,7 @@ function App() {
       <HeroSection />
       <AboutMe />
       <MySkills />
-      <EducationExperience />
+      <EducationCertifications />
       <MyServices />
       <MyProjects />
       <MyContact />

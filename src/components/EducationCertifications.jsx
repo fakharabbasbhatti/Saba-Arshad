@@ -3,7 +3,7 @@ import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const EducationExperience = () => {
+const EducationCertifications = () => {
   useEffect(() => {
     AOS.init({
       offset: 150,
@@ -14,13 +14,13 @@ const EducationExperience = () => {
   }, []);
 
   const education = [
-    { title: "Intermediate (ICS)", period: "2018-2020", institution: "", icon: <FaGraduationCap className="text-white text-2xl" /> },
-    { title: "BS In Information Technology", period: "2021 - 2024", institution: "The Islamia University Bahawalpur Pakistan", icon: <FaGraduationCap className="text-white text-2xl" /> },
+    { title: "Intermediate (ICS)", period: "2021-2023", institution: "Govt Post Graduate College, Bahawalpur", icon: <FaGraduationCap className="text-white text-2xl" /> },
+    { title: "BBA", period: "2023 - 2027", institution: "The CUVAS Bahawalpur Pakistan", icon: <FaGraduationCap className="text-white text-2xl" /> },
   ];
 
   const experience = [
-    { title: "Digital Marketing", period: "2024 - Present", company: "Codes Thinker Company (Onsite)", icon: <FaBriefcase className="text-white text-2xl" /> },
-    { title: "Social Media Management", period: "Jan 2025 - Present", company: "ASL Digital Creator Company (Remote)", icon: <FaBriefcase className="text-white text-2xl" /> },
+    { title: "Digital Marketing", period: "2024 - Present", titleTwo: "Event Organization", icon: <FaBriefcase className="text-white text-2xl" /> },
+    { title: "Social Media Marketing", period: "Jan 2025 - Present", titleTwo: "E-Commerce", icon: <FaBriefcase className="text-white text-2xl" /> },
   ];
 
   return (
@@ -33,7 +33,7 @@ const EducationExperience = () => {
 
           <div className="text-center relative z-10">
             <h1 data-aos="zoom-in" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white pt-3 mb-6 sm:mb-10">
-              Education <span className="text-red-600">&</span> Experience
+              Education <span className="text-red-600">&</span> Certifications
             </h1>
             <p data-aos="fade-up" data-aos-delay="150" className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-12 sm:mb-16">
               A journey of continuous learning and professional growth, highlighting key achievements and skills.
@@ -70,7 +70,7 @@ const EducationExperience = () => {
                   <div className="bg-red-600/20 p-3 sm:p-4 rounded-full shadow-lg backdrop-blur-md">
                     <FaBriefcase className="text-red-600 text-3xl animate-pulse" />
                   </div>
-                  <h2 className="text-xl sm:text-2xl font-semibold text-white tracking-wide">Experience</h2>
+                  <h2 className="text-xl sm:text-2xl font-semibold text-white tracking-wide">Certifications</h2>
                 </div>
                 <div className="relative pl-12 border-l-4 border-red-600/40 space-y-8 sm:space-y-12">
                   {experience.map((item, index) => (
@@ -81,7 +81,7 @@ const EducationExperience = () => {
                       <div data-aos="fade-up" data-aos-delay={index * 150 + 50} className="bg-black p-4 sm:p-6 rounded-2xl border border-red-600/40 hover:border-red-600 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-600/50">
                         <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 tracking-wide">{item.title}</h3>
                         <p className="text-sm sm:text-base text-red-600 font-medium mb-1">{item.period}</p>
-                        <p className="text-gray-300 text-sm sm:text-base">{item.company}</p>
+                        <p className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 tracking-wide">{item.titleTwo}</p>
                       </div>
                     </div>
                   ))}
@@ -103,4 +103,4 @@ const EducationExperience = () => {
   );
 };
 
-export default EducationExperience;
+export default EducationCertifications;
